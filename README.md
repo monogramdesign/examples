@@ -1,8 +1,8 @@
 # Code Examples
 
-- [Page Transitions](https://github.com/monogramdesign/examples/page-transitions)
-  - [Next.js](https://github.com/monogramdesign/examples/page-transitions/with-next)
-  - [SvelteKit](https://github.com/monogramdesign/examples/page-transitions/with-svelte)
-- [Turborepo](https://github.com/monogramdesign/examples/turborepo)
-  - [Next.js](https://github.com/monogramdesign/examples/turborepo/with-next)
-  - [SvelteKit](https://github.com/monogramdesign/examples/turborepo/with-svelte)
+- [Page Transitions](https://github.com/monogramdesign/tree/main/examples/page-transitions)
+  - [Next.js](https://github.com/monogramdesign/examples/tree/main/page-transitions/with-next)
+  - [SvelteKit](https://github.com/monogramdesign/examples/tree/main/page-transitions/with-svelte)
+- [Turborepo](https://github.com/monogramdesign/examples/tree/main/turborepo)
+  - [Next.js](https://github.com/monogramdesign/examples/tree/main/turborepo/with-next)
+  - [SvelteKit](https://github.com/monogramdesign/examples/tree/main/turborepo/with-svelte)
