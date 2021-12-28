@@ -1,4 +1,4 @@
-# Code Examples
+# Examples
 
 - [Page Transitions](https://github.com/monogramdesign/tree/main/examples/page-transitions)
   - [Next.js](https://github.com/monogramdesign/examples/tree/main/page-transitions/with-next)
