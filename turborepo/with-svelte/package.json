@@ -23,12 +23,16 @@
 					"^build"
 				],
 				"outputs": [
-					"dist/**",
-					".next/**"
+					".vercel_build_output/**",
+					".svelte-kit/**",
+					"build/**"
 				]
 			},
 			"lint": {
 				"outputs": []
+			},
+			"dev": {
+				"cache": false
 			}
 		}
 	},

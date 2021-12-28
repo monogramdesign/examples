@@ -1,5 +1,5 @@
 {
-	"name": "eslint-config",
+	"name": "eslint",
 	"version": "0.0.1",
 	"private": true,
 	"files": [
