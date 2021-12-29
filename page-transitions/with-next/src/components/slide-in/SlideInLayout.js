@@ -1,6 +1,6 @@
 // Derived from https://dev.to/anxinyang/page-transition-effect-in-nextjs-9ch
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 
 import styles from './SlideIn.module.css'
 
