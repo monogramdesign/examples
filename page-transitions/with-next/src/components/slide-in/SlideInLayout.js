@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react'
 
 import styles from './SlideIn.module.css'
 
+// TODO: make so element doesn't require position: absolute after transitioning in
+
 const TransitionLayout = ({ children }) => {
 	const [displayChildren, setDisplayChildren] = useState(children)
 	const [transitionStage, setTransitionStage] = useState('initial')
-	const endTransition = () => {}
 
 	useEffect(() => {
 		if (children !== displayChildren) {
