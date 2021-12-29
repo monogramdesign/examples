@@ -1,0 +1,13 @@
+.content {
+	transition: 0.5s;
+}
+
+.initial {
+	opacity: 1;
+}
+.in {
+	opacity: 1;
+}
+.out {
+	opacity: 0;
+}
