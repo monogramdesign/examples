@@ -1,40 +1,34 @@
 // Derived from https://dev.to/anxinyang/page-transition-effect-in-nextjs-9ch
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 
 import styles from './SlideIn.module.css'
 
-// TODO: make so element doesn't require position: absolute after transitioning in
-
 const TransitionLayout = ({ children }) => {
 	const [displayChildren, setDisplayChildren] = useState(children)
-	const [transitionStage, setTransitionStage] = useState('initial')
+	const [isTransitioning, setIsTransitioning] = useState(false)
 
 	useEffect(() => {
 		if (children !== displayChildren) {
-			setTransitionStage('out')
+			setIsTransitioning(true)
 		}
 	}, [children, displayChildren, setDisplayChildren])
 
 	return (
 		<>
 			<main
-				className={`${styles['content']} ${
-					children !== displayChildren ? styles['transitioning'] : ''
-				}`}
-				{...(transitionStage === 'out' ? { 'aria-hidden': 'true' } : {})}>
+				className={`${styles['content']} ${isTransitioning ? styles['transitioning'] : ''}`}
+				{...(isTransitioning ? { 'aria-hidden': 'true' } : {})}>
 				{displayChildren}
 			</main>
 
-			{children !== displayChildren ? (
+			{isTransitioning ? (
 				<main
-					onTransitionEnd={() => {
-						if (transitionStage === 'out') {
-							setTransitionStage('in')
-							setDisplayChildren(children)
-						}
+					onAnimationEnd={() => {
+						setDisplayChildren(children)
+						setIsTransitioning(false)
 					}}
-					className={`${styles['content']} ${styles[transitionStage]}`}>
+					className={`${styles['content']} ${isTransitioning ? styles['slide-in'] : ''}`}>
 					{children}
 				</main>
 			) : null}
