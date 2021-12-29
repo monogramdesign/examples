@@ -1,12 +1,21 @@
 import Link from 'next/link'
 
-export default function PageOne() {
+const Examples = () => {
 	return (
-		<>
-			<p>page 1</p>
-			<Link href="/page-two">
-				<a style={{ color: 'blue', textDecoration: 'underline' }}>to page 2</a>
-			</Link>
-		</>
+		<main>
+			<h1>Transition Examples</h1>
+
+			<div style={{ display: 'flex' }}>
+				<Link href="/fade/page-1">
+					<a style={{ color: 'blue', textDecoration: 'underline', marginRight: '1rem' }}>Fade</a>
+				</Link>
+
+				<Link href="/slide-in/page-1">
+					<a style={{ color: 'blue', textDecoration: 'underline' }}>Slide In</a>
+				</Link>
+			</div>
+		</main>
 	)
 }
+
+export default Examples

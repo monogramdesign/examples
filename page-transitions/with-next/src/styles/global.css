@@ -1,0 +1,18 @@
+body * {
+	font-family: sans-serif;
+}
+
+a {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:visited {
+	color: purple;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}

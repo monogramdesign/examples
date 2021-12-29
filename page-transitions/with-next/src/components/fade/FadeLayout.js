@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import styles from '../styles/Transition.module.css'
+import styles from './Fade.module.css'
 
 const TransitionLayout = ({ children }) => {
 	const [displayChildren, setDisplayChildren] = useState(children)
@@ -23,6 +23,7 @@ const TransitionLayout = ({ children }) => {
 				}
 			}}
 			className={`${styles['content']} ${styles[transitionStage]}`}>
+			<h1>Fade Transition</h1>
 			{displayChildren}
 		</main>
 	)
