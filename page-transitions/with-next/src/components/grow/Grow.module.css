@@ -1,0 +1,37 @@
+.box {
+	background: forestgreen;
+	width: 5rem;
+	height: 5rem;
+}
+.box.page-2 {
+	width: 10rem;
+	height: 10rem;
+}
+
+.out {
+	animation: animate-out 1s ease 0s normal both;
+}
+.out.page-2 {
+	animation: animate-out-2 1s ease-in-out 0s normal both;
+}
+
+@keyframes animate-out {
+	from {
+		width: 5rem;
+		height: 5rem;
+	}
+	to {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+@keyframes animate-out-2 {
+	from {
+		width: 10rem;
+		height: 10rem;
+	}
+	to {
+		width: 5rem;
+		height: 5rem;
+	}
+}
