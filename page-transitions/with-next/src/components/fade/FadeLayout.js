@@ -23,7 +23,6 @@ const TransitionLayout = ({ children }) => {
 				}
 			}}
 			className={`${styles['content']} ${styles[transitionStage]}`}>
-			<h1>Fade Transition</h1>
 			{displayChildren}
 		</main>
 	)
