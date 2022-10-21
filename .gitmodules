@@ -1,3 +1,4 @@
 [submodule "counters-with-firestore-triggers"]
 	path = counters-with-firestore-triggers
 	url = https://github.com/monogramdesign/counters-with-firestore-triggers
+  update = merge
